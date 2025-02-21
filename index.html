@@ -6,8 +6,8 @@
     <title>Dashboard Royal Enfield</title>
     
     <!-- React y ReactDOM -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,26 +21,14 @@
 <body class="bg-gray-100">
     <div id="root"></div>
 
-    <!-- Código de prueba -->
+    <!-- Importar nuestro componente -->
+    <script type="text/babel" src="src/DashboardRE.js"></script>
+    
+    <!-- Código de inicialización -->
     <script type="text/babel">
-        const App = () => {
-            return (
-                <div className="p-8 max-w-7xl mx-auto">
-                    <div className="bg-white rounded-lg shadow-lg p-6">
-                        <h1 className="text-3xl font-bold text-blue-600">
-                            Dashboard Royal Enfield
-                        </h1>
-                        <p className="mt-4 text-gray-600">
-                            Versión de prueba
-                        </p>
-                    </div>
-                </div>
-            );
-        };
-
-        // Renderizar usando la versión correcta de ReactDOM
         const container = document.getElementById('root');
-        ReactDOM.render(<App />, container);
+        const root = ReactDOM.createRoot(container);
+        root.render(<DashboardRE />);
     </script>
 </body>
 </html>
