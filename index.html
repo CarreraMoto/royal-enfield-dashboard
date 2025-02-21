@@ -21,24 +21,12 @@
 <body class="bg-gray-100">
     <div id="root"></div>
 
-    <!-- Componente principal -->
+    <!-- Importar componentes -->
+    <script type="text/babel" src="src/DashboardRE.js"></script>
+    
+    <!-- Renderizar la aplicación -->
     <script type="text/babel">
-        const App = () => {
-            return (
-                <div className="p-8 max-w-7xl mx-auto">
-                    <div className="bg-white rounded-lg shadow-lg p-6">
-                        <h1 className="text-3xl font-bold text-blue-600 mb-4">
-                            Dashboard Royal Enfield
-                        </h1>
-                        <p className="text-gray-600">
-                            Dashboard configurado con React
-                        </p>
-                    </div>
-                </div>
-            );
-        };
-
-        ReactDOM.render(<App />, document.getElementById('root'));
+        ReactDOM.render(<DashboardRE />, document.getElementById('root'));
     </script>
 </body>
 </html>
