@@ -6,14 +6,11 @@
     <title>Dashboard Royal Enfield</title>
     
     <!-- React y ReactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Recharts para gráficas -->
-    <script src="https://unpkg.com/recharts/umd/Recharts.js"></script>
     
     <!-- Babel para JSX -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -21,14 +18,19 @@
 <body class="bg-gray-100">
     <div id="root"></div>
 
-    <!-- Importar componentes -->
-    <script type="text/babel" src="src/DashboardRE.js"></script>
-    
-    <!-- Renderizar la aplicación -->
+    <!-- Código directo para probar -->
     <script type="text/babel">
-        const container = document.getElementById('root');
-        const root = ReactDOM.createRoot(container);
-        root.render(<DashboardRE />);
+        const App = () => {
+            return (
+                <div className="p-8">
+                    <h1 className="text-3xl font-bold text-blue-600">
+                        Dashboard Royal Enfield - Prueba
+                    </h1>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
     </script>
 </body>
 </html>
