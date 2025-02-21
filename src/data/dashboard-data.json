@@ -1,0 +1,31 @@
+{
+  "metricas": [
+    {
+      "mes": "Ene 2025",
+      "demos": 72,
+      "objetivo_demos": 80,
+      "solicitudes": 18,
+      "objetivo_solicitudes": 20,
+      "visitas": 55,
+      "objetivo_visitas": 60,
+      "servicios": 64,
+      "objetivo_servicios": 70,
+      "satisfaccion": 92,
+      "objetivo_satisfaccion": 95,
+      "resenias": 3,
+      "objetivo_resenias": 4
+    }
+  ],
+  "consecutivos": [
+    {
+      "metrica": "Demos ≥ 80",
+      "meses": 2,
+      "actual": 82,
+      "objetivo": 80
+    }
+  ],
+  "config": {
+    "ultima_actualizacion": "2025-02-19",
+    "mes_actual": "febrero 2025"
+  }
+}
