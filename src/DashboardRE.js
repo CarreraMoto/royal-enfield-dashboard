@@ -1,4 +1,5 @@
 const { useState, useEffect } = React;
+const { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } = Recharts;
 
 const DashboardRE = () => {
     // Estado para los datos
@@ -13,7 +14,7 @@ const DashboardRE = () => {
                     Dashboard Royal Enfield
                 </h1>
                 <p className="text-gray-600">
-                    Métricas y KPIs
+                    Métricas y KPIs - Febrero 2025
                 </p>
             </div>
 
@@ -37,9 +38,44 @@ const DashboardRE = () => {
                     <p className="text-sm text-green-600">Meta cumplida</p>
                 </div>
             </div>
+
+            {/* Objetivos Estratégicos */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div className="bg-blue-50 rounded-lg shadow-lg p-6">
+                    <h2 className="text-xl font-bold text-blue-800 mb-4">Motos Nuevas</h2>
+                    <p className="font-bold text-blue-900 mb-2">Objetivo 2025:</p>
+                    <p className="text-blue-800 mb-4">230 nuevos motociclistas</p>
+                    <div className="space-y-2">
+                        <div className="flex justify-between">
+                            <span>Demos Mensuales</span>
+                            <span className="font-bold">82/80</span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>Solicitudes</span>
+                            <span className="font-bold">20/20</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="bg-green-50 rounded-lg shadow-lg p-6">
+                    <h2 className="text-xl font-bold text-green-800 mb-4">Servicio</h2>
+                    <p className="font-bold text-green-900 mb-2">Objetivo 2025:</p>
+                    <p className="text-green-800 mb-4">70 clientes satisfechos/mes</p>
+                    <div className="space-y-2">
+                        <div className="flex justify-between">
+                            <span>Satisfacción</span>
+                            <span className="font-bold">96%/95%</span>
+                        </div>
+                        <div className="flex justify-between">
+                            <span>Reseñas</span>
+                            <span className="font-bold">4/4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
 
-// Exportar el componente para usarlo en index.html
+// Exportar el componente
 window.DashboardRE = DashboardRE;
