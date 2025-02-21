@@ -12,8 +12,11 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Recharts -->
-    <script src="https://unpkg.com/recharts@2.1.12/umd/Recharts.min.js"></script>
+    <!-- Recharts y dependencias -->
+    <script src="https://unpkg.com/d3-array@3.2.0/dist/d3-array.min.js"></script>
+    <script src="https://unpkg.com/d3-scale@4.0.2/dist/d3-scale.min.js"></script>
+    <script src="https://unpkg.com/d3-shape@3.1.0/dist/d3-shape.min.js"></script>
+    <script src="https://unpkg.com/recharts@2.1.12/umd/Recharts.js"></script>
     
     <!-- Babel -->
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -21,10 +24,10 @@
 <body class="bg-gray-100">
     <div id="root"></div>
 
-    <!-- Importar nuestro componente -->
+    <!-- Importar componentes -->
     <script type="text/babel" src="src/DashboardRE.js"></script>
     
-    <!-- Código de inicialización -->
+    <!-- Renderizar la aplicación -->
     <script type="text/babel">
         const container = document.getElementById('root');
         const root = ReactDOM.createRoot(container);
